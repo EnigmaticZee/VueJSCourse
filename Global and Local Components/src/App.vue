@@ -4,7 +4,7 @@
         <cmp-header></cmp-header>
         <hr>
         <!-- Local Component -->
-        <server-status></server-status>
+        <ServerStatus></ServerStatus>
         <hr>
         <!-- Local Component -->
         <server-details></server-details>
@@ -19,7 +19,7 @@
     import ServerDetails from './Components/ServerDetails.vue'
     export default {
         components: {
-            'server-status': ServerStatus,
+            ServerStatus, //ES6
             'server-details': ServerDetails
         }
     }
