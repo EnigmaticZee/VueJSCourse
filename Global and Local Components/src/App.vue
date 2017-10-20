@@ -15,8 +15,8 @@
 </template>
 
 <script>
-    import ServerStatus from './ServerStatus.vue'
-    import ServerDetails from './ServerDetails.vue'
+    import ServerStatus from './Components/ServerStatus.vue'
+    import ServerDetails from './Components/ServerDetails.vue'
     export default {
         components: {
             'server-status': ServerStatus,
