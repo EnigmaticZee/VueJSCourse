@@ -12,7 +12,8 @@ Download NodeJS if you don't have it
   
 Meta
 
-Your Name – @ZaidShakilz
+Your Name
+![alt text](https://github.com/EnigmaticZee/VueJSCourse/blob/master/final%20file-02.png?raw=true)
 
 Distributed under the CC license. See LICENSE for more information.
 
