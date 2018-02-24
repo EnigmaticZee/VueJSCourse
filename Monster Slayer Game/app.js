@@ -15,14 +15,16 @@ new Vue({
             this.count = 0;
         },
         attack(){
-            this.playerAttacks(3,10);
+            //this.playerAttacks(3,10);
+            this.playerAttacks(3, 10, 'Player hits monster critically for ')
             if (this.checkWin()){
                 return;
             };
             this.monsterAttacks();
         },
         sAttack(){
-            this.playerAttacks(10,20);
+            //this.playerAttacks(10,20);
+            this.playerAttacks(10, 20, 'Player hits monster critically for special ')
             if (this.checkWin()){
                 return;
             };
@@ -56,12 +58,13 @@ new Vue({
         calcDamage(min, max){
             return Math.max(Math.floor(Math.random() * max) + 1, min);
         },
-        playerAttacks(min, max){
+        playerAttacks(min, max, outputMsg = 'Player hits monster for '){
             var damage = this.calcDamage(min,max);
             this.monsterHealth -= damage;
             this.turns.unshift({
                 isPlayer: true,
-                text: 'Player hits monster for ' + damage
+                text: outputMsg + damage
+                //text: 'Player hits monster for ' + damage
             })
         },
         monsterAttacks(){
