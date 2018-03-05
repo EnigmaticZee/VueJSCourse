@@ -1,4 +1,4 @@
-This project is created with WebStorm IDE
+**This project is created with WebStorm IDE**
 
 Download NodeJS if you don't have it
   - From Terminal (Mac)
